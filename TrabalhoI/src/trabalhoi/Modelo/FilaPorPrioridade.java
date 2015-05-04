@@ -14,9 +14,11 @@ import java.util.ArrayList;
 public class FilaPorPrioridade {
     
     private ArrayList<Entidade> _filaEntidades;
+    private boolean _estadoFalha;
     
     public FilaPorPrioridade(){
           _filaEntidades = new ArrayList<>();
+          _estadoFalha = false;
     }
     
     public void adicionarEntidadePorTempo(Entidade e){
