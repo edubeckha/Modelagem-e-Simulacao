@@ -36,5 +36,9 @@ public class Entidade {
     public String getNome(){
         return _nome;
     }
+    
+    public void setaTipo(int tipo){
+        _tipo = tipo;
+    }
 
 }

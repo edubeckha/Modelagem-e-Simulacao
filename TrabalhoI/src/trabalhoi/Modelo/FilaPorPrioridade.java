@@ -21,6 +21,15 @@ public class FilaPorPrioridade {
           _estadoFalha = false;
     }
     
+    
+    public void adicionarElemento(Entidade e){
+        _filaEntidades.add(e);
+    }
+    
+    public Entidade removerElemento(){
+        return _filaEntidades.remove(0);
+    }
+    
     public void adicionarEntidadePorTempo(Entidade e){
         for(int i = 0; i < _filaEntidades.size(); i++){
             if(e.getTChegada() < _filaEntidades.get(i).getTChegada()){
@@ -36,5 +45,8 @@ public class FilaPorPrioridade {
         for(int i = 0; i < _filaEntidades.size(); i++){
             System.out.println(_filaEntidades.get(i).getNome());
         }
+    }
+    public int tamanhoFila(){
+        return _filaEntidades.size();
     }
 }

@@ -6,22 +6,12 @@
 package trabalhoi;
 
 import trabalhoi.Modelo.Entidade;
-import trabalhoi.Modelo.FilaPorPrioridade;
+import trabalhoi.Modelo.Sistema;
+import trabalhoi.Utilitarios.Utilitarios;
 
-/**
- *
- * @author Eduardo
- */
 public class TrabalhoI {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-       
-   
-        
-        
         
     }
     

@@ -28,9 +28,12 @@ public class Utilitarios {
     public void uniforme(int min, int max){
         
     }
-    /*EXPO (Média);
-3. NORMAL (Média, DP);
-4. TRIANGULAR (Min, Moda, Máx);
-5. UNIFORME (Min, Máx);*/
+    public static double gerarNumeroRandomico(int max, int min){
+        return Math.floor(Math.random() *(max-min)) + min;
+    }
+    
+    public static void mostraMensagem(String mensagem){
+        System.out.println(mensagem);
+    }
     
 }
