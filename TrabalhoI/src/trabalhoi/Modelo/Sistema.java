@@ -29,17 +29,4 @@ public class Sistema {
              _filaEspera.adicionarElemento(e);     
      }
     }
-    
-    public void mostrarTudo(){
-        Utilitarios.mostraMensagem("/////////////////////////////////////////////////////////////////////////////////\n");
-        Utilitarios.mostraMensagem("Servidor 1: \n");
-        _servidor1.filaAssociada().mostrarFila(); 
-         Utilitarios.mostraMensagem("Servidor 2: \n");
-        _servidor2.filaAssociada().mostrarFila(); 
-        Utilitarios.mostraMensagem("Tamanho da fila servidor 1 / 2: "+ _servidor1.filaAssociada().tamanhoFila() + " / " + _servidor2.filaAssociada().tamanhoFila());
-        Utilitarios.mostraMensagem("Total de elementos: " + (_servidor1.filaAssociada().tamanhoFila() + _servidor2.filaAssociada().tamanhoFila()));
-        Utilitarios.mostraMensagem("Total de elementos na espera: " + _filaEspera.tamanhoFila());
-        Utilitarios.mostraMensagem("Total de elementos ao todo: " + (_servidor1.filaAssociada().tamanhoFila() + _servidor2.filaAssociada().tamanhoFila() + _filaEspera.tamanhoFila()));
-        Utilitarios.mostraMensagem("/////////////////////////////////////////////////////////////////////////////////\n");
-    }
 }
